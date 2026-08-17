@@ -1,0 +1,24 @@
+package ders6.siniflar
+
+class Kitap {
+    var kitapAdi: String = ""
+    var sayfaSayisi: Int = 0
+    var okunanSayfa: Int = 0
+
+    fun sayfaOku(okunacakAdet: Int) {
+        okunanSayfa += okunacakAdet
+
+        if (okunanSayfa >= sayfaSayisi){
+            println("Tebrikler $kitapAdi adlı kitabı bitirdiniz!")
+            okunanSayfa = sayfaSayisi
+
+            println("\nToplam okunan sayfa sayısı: $okunanSayfa")
+        }else{
+            println("Toplam okunan sayfa sayısı: $okunanSayfa")
+        }
+
+
+
+    }
+
+}
