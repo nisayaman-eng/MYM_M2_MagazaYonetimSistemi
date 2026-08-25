@@ -2,7 +2,16 @@ package ders9
 
 fun main() {
 
-    val sayilar = listOf(1,2,3,4,5)
+    val sayilar = listOf(1,2,3,4,5,5,5)
+
+    val sayilarSeti =  sayilar.toSet()
+    println("Sayılar seti: $sayilarSeti")
+
+    println("Sayılar seti 2: ")
+    sayilar.distinct().forEach { println(it)}
+
+
+
 
     val ciftler = sayilar.filter { it % 2 == 0}
     println(ciftler)
